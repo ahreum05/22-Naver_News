@@ -1,0 +1,43 @@
+<!DOCTYPE html>    <!-- html v5를 나타냄 -->
+<html>
+<head>  <!-- 설정 : 브라우저에 표시안되는 것들 -->
+<meta charset="UTF-8">
+<style> /* css 영역 */
+/* 1. 태그 이름으로 태그 선택*/
+div {background: green;}
+/* 2. id로 태그 선택 */
+#lee {background: cyan;}
+/* 3. class로 선택 */
+.time {background: yellow;}
+/* 4. 자식 태그 선택 : 부모태그부터 시작 */
+#hong > div > #L2 {background: brown;}
+/* 5. 자손 태그 선택 : 부모태그부터 시작 */
+#hong #L3 {background: pink;}
+/* 6. 속성으로 태그 선택 */
+input[type="text"] {background: red;}
+</style>
+</head>
+<body>  <!-- 브라우저에 표시되는 내용들  -->
+    <div id="hong" class="name">
+        <input type="text" name="id"><br>
+        <input type="password" name="id"><br>
+        <span>홍길동</span>
+        <div>
+            <h3 id="L1" class="line">첫번째 줄</h3>
+            <h3 id="L2" class="line">두번째 줄</h3>
+            <h3 id="L3" class="line">세번째 줄</h3>
+        </div>
+        
+        <div id="lee" class="name">이영희</div>
+        <p id="tomorrow" class="time">내일은</p>
+        <p id="today" class="time">오늘은</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
